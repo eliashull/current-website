@@ -1,4 +1,4 @@
-/**** BASICS ****/
+/**** SITE BASICS ****/
 
 html {
 	scroll-behavior: smooth;
@@ -11,7 +11,7 @@ body{
 }
 
 
-/**** TEXT ****/
+/**** TEXT BASICS****/
 
 
 body, input, select, textarea {
@@ -22,7 +22,7 @@ body, input, select, textarea {
 }
 
 h1, h2{
-	margin: 25px;
+	margin: 0px 25px 25px 0px; 
 	font-family: 'Merriweather', serif;
 	font-size: 2.5rem;
 	font-weight: 600;
@@ -33,7 +33,7 @@ h1, h2{
 
 
 h3, h4{
-	margin: 25px;
+	margin: 0px 25px 25px 0px; 
 	font-family: 'Merriweather', serif;
 	font-size: 2rem;
 	font-weight: 600;
@@ -43,7 +43,7 @@ h3, h4{
 }
 
 h5{
-	margin: 25px;
+	margin: 0px 25px 25px 0px; 
 	font-family: 'Merriweather', serif;
 	font-size: 1.5rem;
 	font-weight: 600;
@@ -54,8 +54,7 @@ h5{
 
 p{
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1.75rem;
-	/*margin-bottom: 10vh;*/
+	margin: 0px 10px 10px 10px; 
     display: inline;
 	
 }
@@ -75,15 +74,15 @@ p>a{
 	color: #1f1f1f;
 	font-weight: 300; 
 	border-bottom: 2px dotted #1f1f1f;
-	transition: color 0.5s ease-out; 
+	transition: color 0.25s ease-out; 
 	/*transition: border-bottom 0.5s ease-out; */
 }
 
 p>a:hover {
 	color: #00C9FF;
 	text-decoration: none;
-	border-bottom: 2px dotted #00C9FF;
-	transition: color 0.5s ease-in; 
+	border-bottom: none;
+	transition: color 0.25s ease-in; 
 	/*transition: border-bottom 0.5s ease-in; */
 	/*font-weight: 600; */
 }
@@ -142,7 +141,7 @@ a:hover.site-identification {
 	text-transform: uppercase;
 }
 
-/***
+/*** what da heck does dis do
 @media screen and (min-width: 40em) {
   body {
     width: 60%;
@@ -150,39 +149,106 @@ a:hover.site-identification {
 }
 ***/
 
-/**** PAGE ELEMENTS ****/
+/**** SITE ELEMENTS ****/
 
-
-.card-body {
-	border: 2px solid #1f1f1f; 
-	margin-top: 10px;
-	margin-bottom: 10px;
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
+p.content-paragraph {
+	font-size: 1.75rem;
+}
+
+
+/**** CARDS ****/
+
+.btn-card {
+	background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
+	position: relative;
+	display: block;
+	font-weight: 600;
+	color: #1f1f1f;
+	text-decoration: none;
+	margin: 10px;
+	/*border: 2px solid #1f1f1f;*/
+	padding: 5px 35px;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 1s all ease;
+}
+
+.card {
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 2px solid #1f1f1f;
+	position: relative;
+}
+
+.card-close {
+	width: 25px;
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 5px;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.card-body {
+	border-top: 2px solid #1f1f1f; 
+	/*margin-top: 10px;
+	margin-bottom: 10px;*/
+}
+
+.card-row {
+	margin-bottom: 5vh;
+}
+
+.list-group-item {
+	border-top: 2px solid #1f1f1f; 
+}
+
+.card-img-bg {
+	background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
+}
+
+img.card-img-top {
+	opacity: 1;
+	transition: 0.5s all ease;
+}
+
+img.card-img-top:hover {
+	opacity: 0.1;
+	transition: 0.5s all ease;
+	}
+
+
+
+
+/**** CONTAINERS ****/
+
 .container {
-	width: 50vw; 
+	/*width: 50vw; */
 }
 
 .container-fluid {
-	margin: -17px; /*** Fixes the weird margin on the right ***/
+	/*** margin: -17px; Fixes the weird margin on the right ***/
+}
+
+.page-container {
+	padding-left: -10px;
 }
 
 .examples-intro {
     height:30vh;
     width: 100vw;
     max-height: 50vh;
-    background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
-}
-
-.footer-section {
-    background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
-	height:60vh;
-    width: 100vw;
-    max-height: 60vh;
-	margin-top: 10vh;
-	padding-left: 25vw;
-    padding-right: 25vw;
 	text-align: center;
+	margin-bottom: 10vh;
+    background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
 }
 
 .fixed-bottom {
@@ -235,7 +301,7 @@ img.rounded-circle{
 
 .section-intro-text {
     color: #f5f5f5;
-    font-size: 3vw;
+    font-size: 2vw;
     /*margin-top: -10vh;*/
 }
 
@@ -304,53 +370,6 @@ img.rounded-circle{
     color: #1f1f1f;
     border: 2px solid #1f1f1f;*/
 }
-
-
-
-/**** CAROUSEL STYLINGS ****/
-
-.carousel, .item, .active {
-height:100%;
-}
-.carousel-inner {
-height:100vh;
-width:100vw;
-background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);	
-}
-
-.carousel-image {
-	opacity: 0.1;
-}
-
-.carousel {
-margin-bottom: 60px;
-}
-.carousel-caption {
-z-index: 10;
-}
-.carousel .item {
-background-color: #777;
-}
-.carousel-row {
-
-}
-.carousel .carousel-inner .bg {
-background-repeat:no-repeat;
-background-size:cover;
-}
-.carousel .carousel-inner .bg1 {
-background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/spiderweb.jpg');
-background-position: center top;
-}
-.carousel .carousel-inner .bg2 {
-background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/hearthand.jpg');
-background-position: center center;
-}
-.carousel .carousel-inner .bg3 {
-background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/woman-camera.jpg');
-background-position: center bottom;
-}
-
 
 
 /**** SPECIFIC COLOR GRADIENTS FOR PROJECTS IF NEEDED
@@ -435,32 +454,63 @@ background-position: center bottom;
 	transition: 1s background-image ease-in-out;
 }
 
+/**** FOOTER ELEMENTS ****/
+
+
+.footer-section {
+    background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
+	height:60vh;
+    width: 100vw;
+    max-height: 60vh;
+	margin-top: 10vh;
+	padding-left: 25vw;
+    padding-right: 25vw;
+	text-align: center;
+}
+
+.footer-text {
+	color: #f5f5f5;
+	font-size: 3rem;
+}
 
 /**** SOCIAL MEDIA CIRCLE ICONS ****/
 
+a.social-link {
+	color: #f5f5f5;
+	text-decoration: none;
+	font-size: 35px;
+}
+
+a:hover.social-link {
+	color: #f5f5f5;
+	text-decoration: none;
+	font-size: 35px;
+}
 
 .circle-icon {
+	background-image: none;
     background: transparent;
-	border: 2px solid #1f1f1f;
-    width: 50px;
-    height: 50px;
+	border: 2px solid #f5f5f5;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     text-align: center;
-    line-height: 50px;
+    line-height: 70px;
     vertical-align: middle;
 	margin: 10px 10px 0px 10px;
+	transition: background-image 0.6s ease-out;
 }
 
 .circle-icon:hover {
 	background-image: linear-gradient(45deg, #ec18fe 0%, #41aee5 100%);
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75x;
     border-radius: 50%;
     text-align: center;
-    line-height: 50px;
+    line-height: 70px;
     vertical-align: middle;
 	margin: 10px 10px 0px 10px;
-	transition: background-image 0.6s ease;
+	transition: background-image 0.6s ease-in;
 }
 
 
