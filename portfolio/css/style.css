@@ -3,16 +3,12 @@
 html {
 	scroll-behavior: smooth;
 }
-
 body{
 	background: rgb(245,245,245);
 	background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%); 
-	/*margin: 1vw auto;*/ /*** This is messing with the placement of the content on the page ***/
 }
 
-
 /**** TEXT BASICS****/
-
 
 body, input, select, textarea {
 	color: #1f1f1f;
@@ -20,7 +16,6 @@ body, input, select, textarea {
 	line-height: 1.65;
 	letter-spacing: 1.5px;
 }
-
 h1, h2{
 	margin: 0px 25px 25px 0px; 
 	font-family: 'Merriweather', serif;
@@ -30,8 +25,6 @@ h1, h2{
 	text-transform: uppercase; 
     display: block;
 }
-
-
 h3, h4{
 	margin: 0px 25px 25px 0px; 
 	font-family: 'Merriweather', serif;
@@ -41,7 +34,6 @@ h3, h4{
 	text-transform: uppercase; 
     display: block;
 }
-
 h5{
 	margin: 0px 25px 25px 0px; 
 	font-family: 'Merriweather', serif;
@@ -51,22 +43,18 @@ h5{
 	text-transform: uppercase;
     display: block;
 }
-
 p{
 	font-family: 'Josefin Sans', sans-serif;
 	margin: 0px 10px 10px 10px; 
     display: inline;
 	
 }
-
 strong {
     font-weight: 600;
 }
-
 ul {
     list-style-type: disc;
 }
-
 
 /**** LINKS ****/
 
@@ -76,14 +64,12 @@ p>a{
 	border-bottom: 2px dotted #1f1f1f;
 	transition: color 0.25s ease-out; 
 }
-
 p>a:hover {
 	color: #00C9FF;
 	text-decoration: none;
 	border-bottom: none;
 	transition: color 0.25s ease-in; 
 }
-
 em>a {
 	color: #1f1f1f;
 	font-weight: 300; 
@@ -96,14 +82,12 @@ em>a:hover {
 	border-bottom: none;
 	transition: color 0.25s ease-in; 
 }
-
 a.cv-link{
 	color: #1f1f1f;
 	border-bottom: 2px dotted #1f1f1f;
 	transition: color 0.5s ease-out; 
 	transition: border-bottom 0.5s ease-out; 
 }
-
 a:hover.cv-link {
 	color: #a1a1a1;
 	text-decoration: none;
@@ -111,53 +95,48 @@ a:hover.cv-link {
 	transition: color 0.5s ease-in; 
 	transition: border-bottom 0.5s ease-in; 
 }
-
 a.nav-link {
 	color: #1f1f1f;
 	font-weight: 300; 
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
 a:hover.nav-link {
 	color: #1f1f1f;
 	font-weight: 600; 
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
 a.site-identification {
 	color: #1f1f1f;
 	font-weight: 300; 
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
 a:hover.site-identification {
 	color: #1f1f1f;
 	font-weight: 300; 
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
 a.button {
 	color: inherit;
 	text-decoration: none;
 }
-
 a:hover.button {
 	color: inherit;
 	text-decoration: none;
 }
-
-
-/*** what da heck does dis do
-@media screen and (min-width: 40em) {
-  body {
-    width: 60%;
-  }
+a.icon-link {
+	color: #00C9FF;
+	text-decoration: none;
+	transition: color 0.5s ease-in; 
 }
-***/
+a:hover.icon-link {
+	color: #92FE9D;
+	text-decoration: none;
+	transition: color 0.5s ease-out; 
+}
 
 /**** SITE ELEMENTS ****/
 
@@ -166,26 +145,22 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
 p.content-paragraph {
 	font-size: 1.75rem;
 }
 
-
 /**** CONTAINERS ****/
 
 .container {
-	/*width: 50vw; */
+	padding-right: 25px;
+    padding-left: 25px;
 }
-
 .container-fluid {
-	margin: 0px -17px 0px -17px; 
+	/* margin: 0px -17px 0px -17px; Fixes the overhang on desktop views but disabling for now */
 }
-
 .page-container {
-	padding-left: -10px;
+	/* padding-left: -10px; Compensates for the above overhang fix*/
 }
-
 .examples-intro {
     height:30vh;
     width: 100vw;
@@ -194,17 +169,14 @@ p.content-paragraph {
 	margin-bottom: 10vh;
     background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
 }
-
 .footer{
 	/*color: #bebebe;*/
 	font-size: .5em;
 	text-transform: uppercase;
 }
-
 .fixed-bottom {
 	background: rgb(245,245,245);
 }
-
 
 /**** CARDS ****/
 
@@ -222,7 +194,6 @@ p.content-paragraph {
 	overflow: hidden;
 	transition: 1s all ease;
 }
-
 .card {
 	display: flex;
 	margin-top: 10px;
@@ -230,7 +201,6 @@ p.content-paragraph {
 	border: 2px solid #1f1f1f;
 	position: relative;
 }
-
 .card-close {
 	width: 25px;
 	position: absolute;
@@ -240,33 +210,26 @@ p.content-paragraph {
 	left: 0;
 	z-index: 2;
 }
-
 .card-body {
 	border-top: 2px solid #1f1f1f; 
 }
-
 .card-row {
 	margin-bottom: 5vh;
 }
-
 .list-group-item {
 	border-top: 2px solid #1f1f1f; 
 }
-
 .card-img-bg {
 	background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
 }
-
 img.card-img-top {
 	opacity: 1;
 	transition: 0.5s all ease;
 }
-
 img.card-img-top:hover {
 	opacity: 0.1;
 	transition: 0.5s all ease;
-	}
-
+}
 
 /**** IMAGES ****/
 
@@ -275,7 +238,6 @@ img.rounded-circle{
 	max-height: 50%;*/
 }
 
-
 /**** BULLET LISTS ****/
 
 .no-bullet {
@@ -283,7 +245,6 @@ img.rounded-circle{
 	margin: 0;
 	padding: 0;
 }
-
 
 /**** INDIVIDUAL SECTIONS MARK-UP ****/
 
@@ -296,30 +257,25 @@ img.rounded-circle{
 	margin-bottom: 10vh;
 	text-align: center;
 }
-
 .section-intro-text {
     color: #f5f5f5;
     font-size: 2.5vw;
 }
-
 .section-intro-icons {
     font-size: 6vw;
 	vertical-align: middle;
 	text-align: center;
 	color: #f5f5f5;
 	}
-
 .section-row {
 	margin-top: 20vh;
 	margin-bottom: 20vh;
 }
-
 .skills-row {
 	margin-top: 15vh;
 	margin-bottom: 20vh;
 	text-align: center; 
 }
-
 .splash-row {
 	margin-top: 5vh;
 	margin-bottom: 5vh;
@@ -327,16 +283,13 @@ img.rounded-circle{
 	justify-content: center;
 	align-items: center;
 }
-
 #cv-spacer {
 	margin-bottom: 4vh;
 }
-
 #portrait {
 	margin-top: 5vh;
 	max-height: 333px;
 }
-
 
 /**** FANCY GRADIENT UNDERLINE ****/
 
@@ -351,14 +304,12 @@ img.rounded-circle{
 	background-size: 100% 88%;
   }
 
-
 /**** NAVIGATION STYLINGS ****/
 
 .navbar-toggler {
     color: #1f1f1f;
     border: 2px solid #1f1f1f;
 }
-
 
 /**** BUTTONS ****/
 
@@ -388,7 +339,6 @@ img.rounded-circle{
 	z-index: -1;
 	transition: all 0.6s ease;
 }
-
 .button-fx::before{
 	width: 100%;
 	height: 0%;
@@ -398,9 +348,7 @@ img.rounded-circle{
 	height: 830%;
 }
 
-
 /**** TO TOP BUTTON ****/
-
 
 #topbutton {
 	display: none;
@@ -419,14 +367,12 @@ img.rounded-circle{
 	border-radius: 4px;
 	transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
-
 #topbutton:hover {
 	background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
 	transition: 1s background-image ease-in-out;
 }
 
 /**** FOOTER ELEMENTS ****/
-
 
 .footer-section {
     background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
@@ -436,7 +382,6 @@ img.rounded-circle{
 	margin-top: 10vh;
 	text-align: center;
 }
-
 .footer-header {
 	color: #f5f5f5;
 	font-size: 3rem;
@@ -449,13 +394,11 @@ a.social-link {
 	text-decoration: none;
 	font-size: 35px;
 }
-
 a:hover.social-link {
 	color: #f5f5f5;
 	text-decoration: none;
 	font-size: 35px;
 }
-
 .circle-icon {
 	background-image: none;
     background: transparent;
@@ -469,7 +412,6 @@ a:hover.social-link {
 	margin: 0px 10px 0px 10px;
 	transition: background-image 0.6s ease-out;
 }
-
 .circle-icon:hover {
 	background-image: linear-gradient(45deg, #ec18fe 0%, #41aee5 100%);
     width: 75px;
@@ -481,5 +423,3 @@ a:hover.social-link {
 	margin: 0px 10px 0px 10px;
 	transition: background-image 0.6s ease-in;
 }
-
-
