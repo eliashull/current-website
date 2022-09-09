@@ -62,38 +62,36 @@ p>a{
 	color: #1f1f1f;
 	font-weight: 300; 
 	border-bottom: 2px dotted #1f1f1f;
-	transition: color 0.25s ease-out; 
+	transition: color 0.25s ease-out, border-bottom 0.25s ease-in-out; 
 }
 p>a:hover {
 	color: #00C9FF;
 	text-decoration: none;
-	border-bottom: none;
-	transition: color 0.25s ease-in; 
+	border-bottom: 2px dotted #00C9FF;
+	transition: color 0.25s ease-in, border-bottom 0.25s ease-in-out; 
 }
 em>a {
 	color: #1f1f1f;
 	font-weight: 300; 
 	border-bottom: 2px dotted #1f1f1f;
-	transition: color 0.25s ease-out; 
+	transition: color 0.25s ease-out, border-bottom 0.25s ease-in-out; 
 }
 em>a:hover {
 	color: #00C9FF;
 	text-decoration: none;
-	border-bottom: none;
-	transition: color 0.25s ease-in; 
+	border-bottom: 2px dotted #00C9FF;
+	transition: color 0.25s ease-in border-bottom 0.25s ease-in-out; 
 }
 a.cv-link{
 	color: #1f1f1f;
 	border-bottom: 2px dotted #1f1f1f;
-	transition: color 0.5s ease-out; 
-	transition: border-bottom 0.5s ease-out; 
+	transition: color 0.5s ease-out, border-bottom 0.5s ease-out; 
 }
 a:hover.cv-link {
 	color: #a1a1a1;
 	text-decoration: none;
 	border-bottom: 2px dotted #a1a1a1;
-	transition: color 0.5s ease-in; 
-	transition: border-bottom 0.5s ease-in; 
+	transition: color 0.5s ease-in, border-bottom 0.5s ease-in; 
 }
 a.nav-link {
 	color: #1f1f1f;
@@ -242,7 +240,6 @@ img.rounded-circle{
 
 .no-bullet {
 	list-style-type: none;
-	margin: 0;
 	padding: 0;
 }
 
@@ -259,10 +256,10 @@ img.rounded-circle{
 }
 .section-intro-text {
     color: #f5f5f5;
-    font-size: 2.5vw;
+    font-size: 40px;
 }
 .section-intro-icons {
-    font-size: 6vw;
+	font-size: 30px;
 	vertical-align: middle;
 	text-align: center;
 	color: #f5f5f5;
